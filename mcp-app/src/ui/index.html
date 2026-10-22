@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP App - Interactive Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 2rem;
+            background: #0f172a;
+            color: #f8fafc;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #334155;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        .time-display {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            font-family: monospace;
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Server Time Dashboard</h2>
+        <div class="time-display" id="time">Click fetch to load...</div>
+        <button id="fetch-btn">Fetch Server Time via MCP</button>
+    </div>
+
+    <script>
+        // In a real MCP App, this would use @modelcontextprotocol/ext-apps SDK to communicate 
+        // with the host chat application. For this mockup, we simulate the interaction.
+        document.getElementById('fetch-btn').addEventListener('click', () => {
+            document.getElementById('time').innerText = "Loading...";
+
+            // Simulating MCP Tool execution call
+            setTimeout(() => {
+                document.getElementById('time').innerText = new Date().toISOString();
+            }, 800);
+        });
+    </script>
+</body>
+
+</html>

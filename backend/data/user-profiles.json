@@ -1,0 +1,247 @@
+{
+  "user123": {
+    "userId": "user123",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 28,
+    "weakTopics": [
+      "Space Complexity : O(1)",
+      "Recursion & Stack",
+      "Time Complexity : O(n)",
+      "Time Complexity : O(1)",
+      "Time Complexity : O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps",
+      "Two-Pointers"
+    ],
+    "currentMode": "general_assistant",
+    "lastPracticed": "2026-10-22T16:03:32.112Z",
+    "recentEvaluations": [
+      {
+        "topic": "Verbal Algorithm Interview",
+        "approach": "I will use a two pointer approach",
+        "verdict": "Optimal Reasoning: Two-Pointer technique reduces Time Complexity to O(N) and maintains O(1) Space Complexity.",
+        "timestamp": "2026-10-19T12:08:56.951Z"
+      },
+      {
+        "topic": "Verbal Algorithm Interview",
+        "approach": "I will solve this using a two pointer approach",
+        "verdict": "Optimal Reasoning: Two-Pointer technique reduces Time Complexity to O(N) and maintains O(1) Space Complexity.",
+        "timestamp": "2026-10-19T11:40:05.530Z"
+      },
+      {
+        "topic": "Verbal Algorithm Interview",
+        "approach": "What is binary search?",
+        "verdict": "Great approach! Binary Search achieves logarithmic O(log N) Time Complexity on sorted inputs.",
+        "timestamp": "2026-10-19T11:33:46.449Z"
+      },
+      {
+        "topic": "Verbal Algorithm Interview",
+        "approach": "I will solve this using a two pointer approach",
+        "verdict": "Optimal Reasoning: Two-Pointer technique reduces Time Complexity to O(N) and maintains O(1) Space Complexity.",
+        "timestamp": "2026-10-16T15:46:37.210Z"
+      },
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-15T15:43:55.335Z"
+      }
+    ]
+  },
+  "test_audit": {
+    "userId": "test_audit",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "tech_coach",
+    "lastPracticed": "2026-10-22T05:00:22.864Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T05:00:22.865Z"
+      }
+    ]
+  },
+  "test_dsa_bank": {
+    "userId": "test_dsa_bank",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "tech_coach",
+    "lastPracticed": "2026-10-22T07:06:13.691Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T07:06:13.692Z"
+      }
+    ]
+  },
+  "test_dsa_bank2": {
+    "userId": "test_dsa_bank2",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "tech_coach",
+    "lastPracticed": "2026-10-22T07:06:13.691Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T07:06:13.692Z"
+      }
+    ]
+  },
+  "test_aptitude_user": {
+    "userId": "test_aptitude_user",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "study_coach",
+    "lastPracticed": "2026-10-22T07:28:53.595Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T07:27:19.988Z"
+      }
+    ]
+  },
+  "test_aptitude_user_2": {
+    "userId": "test_aptitude_user_2",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "tech_coach",
+    "lastPracticed": "2026-10-22T07:27:19.987Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T07:27:19.988Z"
+      }
+    ]
+  },
+  "test_dsa_lru": {
+    "userId": "test_dsa_lru",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "tech_coach",
+    "lastPracticed": "2026-10-22T07:27:19.987Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T07:27:19.988Z"
+      }
+    ]
+  },
+  "test_reasoning_debug": {
+    "userId": "test_reasoning_debug",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "tech_coach",
+    "lastPracticed": "2026-10-22T07:27:19.987Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T07:27:19.988Z"
+      }
+    ]
+  },
+  "inspect_reply_test": {
+    "userId": "inspect_reply_test",
+    "name": "Candidate",
+    "streakDays": 3,
+    "problemsSolved": 4,
+    "weakTopics": [
+      "Time Complexity O(n²)",
+      "Recursion Stack Overflow"
+    ],
+    "strongTopics": [
+      "Binary Search",
+      "HashMaps"
+    ],
+    "currentMode": "tech_coach",
+    "lastPracticed": "2026-10-22T07:27:19.987Z",
+    "recentEvaluations": [
+      {
+        "topic": "Array Rotation",
+        "approach": "Nested loops",
+        "verdict": "Needs Time Complexity Practice",
+        "timestamp": "2026-10-21T07:27:19.988Z"
+      }
+    ]
+  }
+}
