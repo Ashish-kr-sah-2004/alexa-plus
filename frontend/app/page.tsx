@@ -181,18 +181,43 @@ export default function AlexaPlusShow() {
     if (typeof window !== 'undefined' && ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
       const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
       recognitionRef.current = new SpeechRecognition();
-      recognitionRef.current.continuous = true;
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      recognitionRef.current.continuous = !isMobile; // Mobile engines work best in single-shot mode
       recognitionRef.current.interimResults = true;
       recognitionRef.current.lang = 'en-IN'; // Indian English accent recognition
 
       recognitionRef.current.onresult = (event: any) => {
-        let fullText = "";
+        let assembledText = "";
         let isFinalChunk = false;
+
         for (let i = 0; i < event.results.length; ++i) {
-          fullText += event.results[i][0].transcript + " ";
-          if (event.results[i].isFinal) isFinalChunk = true;
+          const chunk = event.results[i][0].transcript.trim();
+          if (!chunk) continue;
+
+          if (event.results[i].isFinal) {
+            isFinalChunk = true;
+          }
+
+          if (!assembledText) {
+            assembledText = chunk;
+          } else {
+            const lowerAssembled = assembledText.toLowerCase();
+            const lowerChunk = chunk.toLowerCase();
+
+            // Mobile Chrome Bug Fix: On Android Chrome, each new result often contains the full cumulative text
+            // e.g. ["what", "what is", "what is your", "what is your name"]
+            if (lowerChunk.startsWith(lowerAssembled)) {
+              assembledText = chunk;
+            } else if (lowerAssembled.endsWith(lowerChunk)) {
+              // Duplicate word already at tail, skip
+            } else {
+              // Desktop Chrome: separate discrete phrases, append cleanly
+              assembledText = assembledText + " " + chunk;
+            }
+          }
         }
-        fullText = fullText.trim();
+
+        const fullText = assembledText.trim();
         setTranscript(fullText);
         latestTranscriptRef.current = fullText;
 
